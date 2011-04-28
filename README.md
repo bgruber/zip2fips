@@ -1,0 +1,21 @@
+zip2fips
+========
+
+At work, we keep certain location information indexed by
+zipcode. Recently, I wanted to feed that data into something that
+worked with 5-digit FIPS county codes, and was unable to find an
+easily-parsed table that mapped, however roughly, from one to the
+other. The best I could find was the CDC's [County Cross
+Reference](http://wonder.cdc.gov/wonder/sci_data/codes/fips/type_txt/cntyxref.asp)
+files, but I realized I needed to do quite a bit of parsing before
+they were really useful to me. I figured it might be of use to someone
+else, so here it is.
+
+The output is in zip2fips.json.
+
+I made one "cleanup" change to line 1794315 of zipcty4, which
+originally was missing GA as the state abbreviation. The
+state_fips.json file was made by hand, where "by hand" means I
+copy-and-pasted [this
+table](http://www.epa.gov/enviro/html/codes/state.html) and
+manipulated it in Emacs.
