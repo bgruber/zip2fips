@@ -20,5 +20,5 @@ code from the zipcty files. The output is in zip2fips.json.
 
 The state_fips.json file was made by hand, where "by hand" means I
 copy-and-pasted [this
-table](http://www.epa.gov/enviro/html/codes/state.html) and
+table](https://en.wikipedia.org/wiki/Federal_Information_Processing_Standard_state_code#FIPS_state_codes) and
 manipulated it in Emacs.
