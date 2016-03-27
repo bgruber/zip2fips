@@ -6,7 +6,7 @@ import re
 statecodes = json.load(open('state_fips.json'))
 zipmap = {}
 
-for i in range(1,10):
+for i in range(1,11):
     zfile = open('zipctys/zipcty%d' % i)
     zfile.readline() # skip first line
     for l in zfile:
