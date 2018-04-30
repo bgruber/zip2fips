@@ -1,6 +1,6 @@
 #!/bin/bash
 
-curl --create-dirs "http://wonder.cdc.gov/wonder/sci_data/datasets/zipctyA.zip" -o "zipctys/zipctyA.zip" "http://wonder.cdc.gov/wonder/sci_data/datasets/zipctyB.zip" -o "zipctys/zipctyB.zip"
+curl --create-dirs "https://wonder.cdc.gov/wonder/sci_data/datasets/zipctyA.zip" -o "zipctys/zipctyA.zip" "https://wonder.cdc.gov/wonder/sci_data/datasets/zipctyB.zip" -o "zipctys/zipctyB.zip"
 
 unzip "zipctys/zipctyA.zip" -d zipctys
 unzip "zipctys/zipctyB.zip" -d zipctys
