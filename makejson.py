@@ -15,4 +15,4 @@ for i in range(1,11):
             r = m.groupdict()
             zipmap[r['zip']] = statecodes[r['state']] + r['fips']
 
-print json.dumps(zipmap)
+print(json.dumps(zipmap))
